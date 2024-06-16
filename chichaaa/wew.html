@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        #sumResult {
+            font-weight: bold;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        
+        <input type="number" id="num1" placeholder="Enter first number">
+        <input type="number" id="num2" placeholder="Enter second number">
+
+        <button onclick="calculate()">Calculate</button>
+
+    </div>
+
+    <div id="sumResult"></div>
+    <div id="differenceResult"></div>
+    <div id="productResult"></div>
+    <div id="quotientResult"></div>
+    <div id="imageContainer"></div>
+</body>
+<body>
+    <div>
+    <script>
+        function calculate() {
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+
+            const sum = num1 + num2;
+            const difference = num1 - num2;
+            const product = num1 * num2;
+            const quotient = num1 / num2;
+
+      
+            document.getElementById("sumResult").textContent = `Sum: ${sum}`;
+            document.getElementById("differenceResult").textContent = `Difference: ${difference}`;
+            document.getElementById("productResult").textContent = `Product: ${product}`;
+            document.getElementById("quotientResult").textContent = `Quotient: ${quotient.toFixed(2)}`;
+       
+            
+            if (sum > 50) {
+             document.body.style.color = "blue";
+            } 
+            else {
+            document.body.style.color = "red";
+            }
+            
+            if (product > 500) {
+                document.body.style.backgroundColor = "green";
+            } else {
+                document.body.style.backgroundColor = "orange";
+            }
+            
+
+            
+            if (Math.abs(difference) < 50) {
+                document.getElementById("imageContainer").innerHTML = '<img src="3.jpg" alt="Image">';
+            }
+            
+            if (Math.abs(difference) >= 50) {
+                document.getElementById("imageContainer").innerHTML = '<img src="6.jpg" alt="Image">';
+            }
+        }
+    </script>
+    </div>
+</body>
+
+</html>

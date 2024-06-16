@@ -1,0 +1,86 @@
+/* Custom CSS for additional styling */
+.btn-purple {
+    background-color: #9146ff;
+    color: #fff;
+    border-color: #9146ff;
+}
+
+.btn-purple:hover {
+    background-color: #7c35d6;
+    border-color: #7c35d6;
+}
+
+.forgot-password {
+    color: #666;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #5f0c8f;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    padding: 20px;
+    background-color: rgb(187, 182, 192);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #9146ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7c35d6;
+}
+
+.forgot-password {
+    text-align: center;
+    color: #666;
+    cursor: pointer;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
